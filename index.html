@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/amazeui.css" />
+		<style type="text/css">
+			body {
+				padding: 20px 0 50px 0;
+			}
+			.myFormSubmit {
+				float: right;
+				text-align: right;
+				margin-top: 10px;
+			}
+			.myway span {
+				font-size: 24px;
+				font-weight: bold;
+				color: #f37b1d;
+			}
+			.res {
+				border: 1px solid #f37b1d;
+			}
+			.res .boat {
+				height: 200px;
+				background-color: #F5F5F5;
+				text-align: center;
+			}
+			.res .boat .way {
+				margin: 15px auto;
+				color: #f37b1d;
+				font-size: 24px;
+			}
+			.res .boat .time {
+				color: #0e90d2;
+				font-weight: bold;
+			}
+			.res ul {
+				margin: 0;
+				padding: 0;
+			}
+			.res .sta {
+				background-color: #FFFCF5;
+				height: 200px;
+				background-image: url(img/l.png);
+				background-repeat: no-repeat;
+				background-size: auto 180px;
+				background-position: 90% 10px;
+			}
+			.res .sta ul li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				line-height: 28.57px;
+				width: 165px;
+				cursor: pointer;
+			}
+			.res .fin {
+				background-color: #FFFCF5;
+				height: 200px;
+				background-image: url(img/r.png);
+				background-repeat: no-repeat;
+				background-size: auto 180px;
+				background-position: 10% 10px;
+			}
+			.res  ul li:hover{
+				background-color: #F5F5F5;
+			}
+			.res .fin ul li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				line-height: 40px;
+				text-align: right;
+				width: 165px;
+				display: inline-block;
+				float: right;
+				cursor: pointer;
+			}
+			.res .order {
+				line-height: 200px;
+				text-align: center;
+			}
+			.sel {
+				background-color: #f37b1d;
+			}
+			.myForm .myway {
+				margin:40px 0 10px 0;
+				text-align: center;
+			}
+		
+		</style>
+	</head>
+
+	<body>
+		<div class="am-container">
+			<form class="myForm">
+				<div class="am-g">
+					<div class="am-u-sm-3">
+						<div class="am-input-group am-input-group-primary">
+							<span class="am-input-group-btn">
+				        <button class="am-btn am-btn-primary" type="button">
+				        	<span class="am-icon-send"></span>
+							</button>
+							</span>
+							<input type="text" class="am-form-field">
+						</div>
+					</div>
+					<div class="am-u-sm-3">
+						<div class="am-input-group am-input-group-warning">
+							<span class="am-input-group-btn">
+				        <button class="am-btn am-btn-warning" type="button">
+				        	<span class="am-icon-search"></span>
+							</button>
+							</span>
+							<input type="text" class="am-form-field" required placeholder="黄埔">
+						</div>
+					</div>
+					<div class="am-u-sm-3">
+						<div class="am-input-group am-input-group-warning">
+							<span class="am-input-group-btn">
+				        <button class="am-btn am-btn-warning" type="button">
+				        	<span class="am-icon-search"></span>
+							</button>
+							</span>
+							<input type="text" class="am-form-field" required placeholder="上海">
+						</div>
+					</div>
+					<div class="am-u-sm-3">
+						<div class=" am-input-group am-input-group-primary ">
+							<span class="am-input-group-btn ">
+				        <button class="am-btn am-btn-primary " type="button ">
+				        	<span class="am-icon-anchor "></span>
+							</button>
+							</span>
+							<input type="text " class="am-form-field ">
+						</div>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 myFormSubmit">
+						<button type="submit" class="am-btn am-btn-success" onclick="return false">查询船期</button>
+					</div>
+				</div>
+
+				<div class="am-g am-kai myway">
+					<div class="am-u-sm-12">
+						梧州——<span>黄埔</span>——<span>上海</span>——武汉
+					</div>
+				</div>
+
+				<div class="am-g res">
+					<div class="am-u-sm-3 sta">
+						<ul>
+							<li>1.船A 2015.7.17 08:21</li>
+							<li>2.船B 2015.7.17 09:50</li>
+							<li>3.船C 2015.7.17 11:09</li>
+							<li>4.船D 2015.7.17 13:32</li>
+							<li>5.船E 2015.7.17 15:50</li>
+							<li>6.船F 2015.7.17 18:09</li>
+							<li>7.船G 2015.7.17 20:32</li>
+						</ul>
+					</div>
+					<div class="am-u-sm-3 boat">
+						<div class="way">黄埔—<i class="am-icon-ship"></i>—上海</div>
+						<div class="time"><br>2015.7.18 18:21</br>至<br>2015.7.23 9:12</div>
+					</div>
+					<div class="am-u-sm-3 fin">
+						<ul>
+							<li>1.船X 2015.7.24 08:21</li>
+							<li>2.船Y 2015.7.24 09:50</li>
+							<li>3.船Z 2015.7.24 11:09</li>
+							<li>4.船P 2015.7.24 13:32</li>
+							<li>5.船V 2015.7.24 15:50</li>
+						</ul>
+					</div>
+					<div class="am-u-sm-3 order">
+						<button type="button" class="am-btn am-btn-warning am-round">订舱<i class="am-icon-cart-arrow-down am-icon-sm"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="am-g am-kai myway">
+					<div class="am-u-sm-12">
+						江阴——<span>黄埔</span>——<span>上海</span>——重庆
+					</div>
+				</div>
+
+				<div class="am-g res">
+					<div class="am-u-sm-3 sta">
+						<ul>
+							<li>1.船A 2015.7.17 08:21</li>
+							<li>2.船B 2015.7.17 09:50</li>
+							<li>3.船C 2015.7.17 11:09</li>
+							<li>4.船D 2015.7.17 13:32</li>
+							<li>5.船E 2015.7.17 15:50</li>
+							<li>6.船F 2015.7.17 18:09</li>
+							<li>7.船G 2015.7.17 20:32</li>
+						</ul>
+					</div>
+					<div class="am-u-sm-3 boat">
+						<div class="way">黄埔—<i class="am-icon-ship"></i>—上海</div>
+						<div class="time"><br>2015.7.18 18:21</br>至<br>2015.7.23 9:12</div>
+					</div>
+					<div class="am-u-sm-3 fin">
+						<ul>
+							<li>1.船X 2015.7.24 08:21</li>
+							<li>2.船Y 2015.7.24 09:50</li>
+							<li>3.船Z 2015.7.24 11:09</li>
+							<li>4.船P 2015.7.24 13:32</li>
+							<li>5.船V 2015.7.24 15:50</li>
+						</ul>
+					</div>
+					<div class="am-u-sm-3 order">
+						<button type="button" class="am-btn am-btn-warning am-round">订舱<i class="am-icon-cart-arrow-down am-icon-sm"></i>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".res  ul li").click(function(event) {
+				$(this).siblings().css("background-color","#FFFCF5");
+				$(this).css("background-color","#f37b1d");
+			});
+		</script>
+	</body>
+
+</html>
